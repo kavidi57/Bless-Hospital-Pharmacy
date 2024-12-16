@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Medicine</title>
+    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link rel="stylesheet" href="./order.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <section id="logo">
+            <a href="home.html" aria-label="Bless Hospital Home">
+                <img id="logo_img" src="./images/Bless Hospital.png" alt="Bless Hospital Logo">
+            </a>
+        </section>
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <nav id="nav_bar" role="navigation" aria-label="Main Navigation">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctor.html">Doctors</a>
+            <a href="Consulting reservation.html">Consulting Reservation</a>
+            <a href="./index.html">Order</a>
+            <a href="./payment.html">Payment</a>
+        </nav>
+    </header>
+
+    <h1>Order Medicine</h1>
+
+    <div class="categories">
+        <!-- Medicine Categories Section -->
+        <div class="category" id="analgesics">
+            <h2>Analgesics</h2>
+            <div class="medicine">
+                <p>Paracetamol</p>
+                <input type="number" id="paracetamol" value="0">
+            </div>
+            <div class="medicine">
+                <p>Aspirin</p>
+                <input type="number" id="aspirin" value="0">
+            </div>
+            <div class="medicine">
+                <p>Ibuprofen</p>
+                <input type="number" id="ibuprofen" value="0">
+            </div>
+            <div class="medicine">
+                <p>Codeine</p>
+                <input type="number" id="codeine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Diclofenac</p>
+                <input type="number" id="diclofenac" value="0">
+            </div>
+            <div class="medicine">
+                <p>Tramadol</p>
+                <input type="number" id="tramadol" value="0">
+            </div>
+        </div>
+
+        <div class="category" id="antibiotics">
+            <h2>Antibiotics</h2>
+            <div class="medicine">
+                <p>Amoxicillin</p>
+                <input type="number" id="amoxicillin" value="0">
+            </div>
+            <div class="medicine">
+                <p>Ciprofloxacin</p>
+                <input type="number" id="ciprofloxacin" value="0">
+            </div>
+            <div class="medicine">
+                <p>Clindamycin</p>
+                <input type="number" id="clindamycin" value="0">
+            </div>
+            <div class="medicine">
+                <p>Azithromycin</p>
+                <input type="number" id="azithromycin" value="0">
+            </div>
+            <div class="medicine">
+                <p>Penicillin</p>
+                <input type="number" id="penicillin" value="0">
+            </div>
+            <div class="medicine">
+                <p>Metronidazole</p>
+                <input type="number" id="metronidazole" value="0">
+            </div>
+        </div>
+
+        <div class="category" id="antidepressants">
+            <h2>Antidepressants</h2>
+            <div class="medicine">
+                <p>Fluoxetine</p>
+                <input type="number" id="fluoxetine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Sertraline</p>
+                <input type="number" id="sertraline" value="0">
+            </div>
+            <div class="medicine">
+                <p>Escitalopram</p>
+                <input type="number" id="escitalopram" value="0">
+            </div>
+            <div class="medicine">
+                <p>Venlafaxine</p>
+                <input type="number" id="venlafaxine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Paroxetine</p>
+                <input type="number" id="paroxetine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Duloxetine</p>
+                <input type="number" id="duloxetine" value="0">
+            </div>
+        </div>
+
+        <div class="category" id="antihistamines">
+            <h2>Antihistamines</h2>
+            <div class="medicine">
+                <p>Loratadine</p>
+                <input type="number" id="loratadine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Diphenhydramine</p>
+                <input type="number" id="diphenhydramine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Fexofenadine</p>
+                <input type="number" id="fexofenadine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Cetirizine</p>
+                <input type="number" id="cetirizine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Levocetirizine</p>
+                <input type="number" id="levocetirizine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Chlorpheniramine</p>
+                <input type="number" id="chlorpheniramine" value="0">
+            </div>
+        </div>
+
+        <div class="category" id="antihypertensives">
+            <h2>Antihypertensives</h2>
+            <div class="medicine">
+                <p>Amlodipine</p>
+                <input type="number" id="amlodipine" value="0">
+            </div>
+            <div class="medicine">
+                <p>Losartan</p>
+                <input type="number" id="losartan" value="0">
+            </div>
+            <div class="medicine">
+                <p>Enalapril</p>
+                <input type="number" id="enalapril" value="0">
+            </div>
+            <div class="medicine">
+                <p>Hydrochlorothiazide</p>
+                <input type="number" id="hydrochlorothiazide" value="0">
+            </div>
+            <div class="medicine">
+                <p>Ramipril</p>
+                <input type="number" id="ramipril" value="0">
+            </div>
+            <div class="medicine">
+                <p>Bisoprolol</p>
+                <input type="number" id="bisoprolol" value="0">
+            </div>
+        </div>
+    </div>
+
+    <!-- Buttons for Favorites and Purchase -->
+    <div class="actions">
+        <button id="add-to-favourites" onclick="addToFavorites()">Add to Favourites</button>
+        <button id="apply-favourites" onclick="applyFavorites()">Apply Favourites</button>
+        <button id="buy-now" onclick="goToPayment()">Buy Now</button>
+    </div>
+
+    <!-- Order Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Medicine</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="order-table">
+            <!-- Dynamic Table Rows will be added here -->
+        </tbody>
+    </table>
+
+    <div id="total-price">Total: $0</div>
+    <footer>
+        <section id="logo2">
+            <img id="logo2_img" src="./images/Bless Hospital.png" alt="Bless Hospital Logo">
+        </section>
+
+        <section id="footer">
+            <div class="link">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Services.html">Services</a>
+                <a href="Doctor.html">Doctors</a>
+                <a href="Consulting reservation.html">Consulting Reservation</a>
+                <a href="./index.html">Order</a>
+                <a href="./payment.html">Payment</a>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: info@bleshospital.lk</li>
+                    <li>Tel: +94 11-3671111</li>
+                    <li>Address: 19/B, National Park Rd, Kandy, Sri Lanka</li>
+                </ul>
+            </div>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </section>
+        <p>&copy; 2024 Bless Hospital Pvt Ltd</p>
+    </footer>
+
+    <script src="./order.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+.header {
+    display: flex;
+    align-items:center;
+    background-color:#2561a1; /* Bright Blue for header */
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+#nav_bar {
+    display: flex;
+    gap: 40px; /* Space between navigation links */
+}
+
+.header #nav_bar a {
+    color:black; /* black text in navigation */
+    text-decoration: none;
+    padding: 3px 0;
+    margin-right: 20px;
+   
+    
+}
+
+#logo_img {
+    max-height: 70px;
+    max-width: 100px;
+    display: flex;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+#nav_bar {
+    display: flex;
+   
+    font-size: 18px;
+    
+}
+
+#nav_bar a:hover {
+    background-color: #ffd700;;
+    border-radius: 5px;
+}
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #193654;
+    margin: 4px 0;
+}
+
+/* Responsive Styles for Mobile */
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger on small screens */
+    }
+
+    #nav_bar {
+        display: none; /* Hide the navigation bar by default on small screens */
+        flex-direction: column;
+        background: #193654;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust to match the header height */
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+        transition: all 0.3s ease;
+    }
+
+    #nav_bar.active {
+        display: flex; /* Show the navigation bar when 'active' class is added */
+    }
+
+    #nav_bar a {
+        color: white;
+        padding: 10px;
+        margin: 5px 0;
+    }
+}
+
+/* Footer Styles */
+
+footer {
+    background-color:#2561a1;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#logo2 {
+    margin-right: 20px;
+    flex: 1;
+    display: flex;
+    
+    
+}
+
+#logo2_img {
+    width: 100px;
+    height:auto;
+    margin-left: 2%;
+}
+
+#footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#footer .linlk, #footer .contact, #footer .following {
+    flex: 1 1 200px;
+    margin: 10px;
+    min-width: 150px;
+}
+
+#footer a {
+    color: white;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #ffd700;
+}
+
+#footer .contact ul, #footer .following ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer .contact li, #footer .following li {
+    margin: 5px 0;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #f0f0f0;
+    font-size: 0.8em;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+

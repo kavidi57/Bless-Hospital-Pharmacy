@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link rel="stylesheet" href="./payment.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <section id="logo">
+            <a href="home.html" aria-label="Bless Hospital Home">
+                <img id="logo_img" src="./images/Bless Hospital.png" alt="Bless Hospital Logo">
+            </a>
+        </section>
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <nav id="nav_bar" role="navigation" aria-label="Main Navigation">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctor.html">Doctors</a>
+            <a href="Consulting reservation.html">Consulting Reservation</a>
+            <a href="./index.html">Order</a>
+            <a href="./payment.html">Payment</a>
+        </nav>
+    </header>
+    <h1>Payment Information</h1>
+
+    <div id="order-summary">
+        <!-- Order details table will be displayed here -->
+        <h2>Order Summary</h2>
+        <table id="order-summary-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Order items will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <form id="payment-form">
+        <h2>Enter Your Payment Details</h2>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="address">Delivery Address:</label><br>
+        <input type="text" id="address" required><br><br>
+
+        <h3>Card Details</h3>
+
+        <label for="card-number">Card Number:</label><br>
+        <input type="text" id="card-number" name="card-number" pattern="\d{16}" placeholder="1234 5678 9012 3456"><br><br>
+
+        <label for="expiry-date">Expiration Date:</label><br>
+        <input type="month" id="expiry-date" required><br><br>
+
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" placeholder="123" required maxlength="3" pattern="\d{3}"><br><br>
+
+        <button type="submit">Pay</button>
+    </form>
+
+    <p id="thank-you-message"></p>
+    <footer>
+        <section id="logo2">
+            <img id="logo2_img" src="./images/Bless Hospital.png" alt="Bless Hospital Logo">
+        </section>
+
+        <section id="footer">
+            <div class="link">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Services.html">Services</a>
+                <a href="Doctor.html">Doctors</a>
+                <a href="Consulting reservation.html">Consulting Reservation</a>
+                <a href="./index.html">Order</a>
+                <a href="./payment.html">Payment</a>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: info@bleshospital.lk</li>
+                    <li>Tel: +94 11-3671111</li>
+                    <li>Address: 19/B, National Park Rd, Kandy, Sri Lanka</li>
+                </ul>
+            </div>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </section>
+        <p>&copy; 2024 Bless Hospital Pvt Ltd</p>
+    </footer>
+
+    <script src="payment.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

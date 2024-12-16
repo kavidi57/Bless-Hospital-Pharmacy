@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styling */
+h1, h2 {
+    color:black; /* Navy Blue */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+}
+
+.medicine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.medicine p {
+    font-size: 1rem;
+    color: #003366;
+}
+
+button {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Buttons Styling */
+button#add-to-favourites, button#apply-favourites {
+    background-color: #4caf50;
+    margin: 20px 10px;
+}
+
+button#add-to-favourites:hover, button#apply-favourites:hover {
+    background-color: #45a049;
+}
+
+button#buy-now {
+    background-color: #ff6f61;
+    margin-top: 20px;
+}
+
+button#buy-now:hover {
+    background-color: #e85d52;
+}
+
+/* Order Table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+#total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #003366;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .medicine {
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .medicine button {
+        margin: 5px 0;
+    }
+}
